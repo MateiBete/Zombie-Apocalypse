@@ -24,11 +24,11 @@ public class ZombieSpawner : MonoBehaviour
                 GameObject zombie = Instantiate(ZombiePrefab, transform);
                 zombie.transform.position = GetRandomPosition();
 
-                while (Vector2.Distance(zombie.transform.position, Player.transform.position) < 1.5f)
+                while (Vector2.Distance(zombie.transform.position, Player.transform.position) < 4f)
                     zombie.transform.position = GetRandomPosition();
             }
         }
     }
 
-    Vector2 GetRandomPosition() => new Vector2(Random.Range(-6, 6), Random.Range(-3, 4));
+    Vector2 GetRandomPosition() => new Vector2(Random.Range(-10, 10), Random.Range(-1, 4));
 }

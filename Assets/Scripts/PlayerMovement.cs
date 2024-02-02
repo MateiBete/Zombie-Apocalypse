@@ -32,10 +32,11 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * Speed * Time.deltaTime);
             animator.SetBool("IsMoving", true );
         }
-        if (Input.GetKey("s")){
+        /*if (Input.GetKey("s")){
             rb.AddForce(Vector2.down * Speed * Time.deltaTime);
             animator.SetBool("IsMoving", true );
-        }
+        }*/
+        
         if (Input.GetKey("d")){
             rb.AddForce(Vector2.right * Speed * Time.deltaTime);
             animator.SetBool("IsMoving", true );
