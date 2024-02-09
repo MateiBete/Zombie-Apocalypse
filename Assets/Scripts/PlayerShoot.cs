@@ -9,7 +9,7 @@ public class PlayerShoot : MonoBehaviour
     public GameObject BulletPrefab;
     public Text Score;
     public float Speed = 1000f;
-    public float MaxExistenceTime = 0.5f;
+    public float MaxExistenceTime = 0.7f;
     private GameObject bullet;
     private Vector3 shootDirection;
     private bool canShoot = true;
