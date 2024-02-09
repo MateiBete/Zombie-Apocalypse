@@ -21,5 +21,8 @@ public class ZombieController : MonoBehaviour
                             Player.transform.position,
                             1f * Time.deltaTime
         );
+      if(Player){
+        transform.position = Vector2.MoveTowards(transform.position,Player.transform.position, 1f* Time.deltaTime);
+      }
     }
 }
